@@ -29,7 +29,7 @@ This is a simple website built using HTML and CSS as part of a university course
 
 ## Development
 
-This project is designed as an exercise to practice basic web development skills. Feel free to experiment with the HTML and CSS to learn more.
+This project is designed as an exercise to practice basic web development skills.
 
 ## Acknowledgments
 
