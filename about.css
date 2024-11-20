@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+body {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0; /* Also removes margin */
+  background-color: #030712;
+  color: #fafafa;
+}
+nav {
+  background-color: #030712;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+nav a {
+  text-decoration: none;
+  color: #fafafa;
+}
+.nav-container {
+  display: flex;
+  gap: 1em;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 1em;
+}
+nav a {
+  font-size: 0.75em;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+}
+
+#about1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+#about1 #left {
+  width: 50%;
+}
+#about1 #right {
+  width: 50%;
+}
+#about1 #right img {
+  width: 100%;
+}
+
+#skills {
+  padding-left: 6em;
+  padding-right: 6em;
+}
+#skills #skills-container {
+  display: flex;
+  justify-content: space-between;
+}
+#skills #skills-container #skill-section {
+  border-left: 2px solid #4f46e5;
+  padding-left: 1em;
+  padding-top: 0;
+  width: 100%;
+}
+#skills #skills-container #skill-section h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #4f46e5;
+}
+#skills #skills-container #skill-section p {
+  margin-left: 2px;
+}
+#invite {
+  margin-top: 60px;
+}
+#invite a {
+  color: #fafafa;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #4f46e5;
+  border: 0;
+  text-decoration: none;
+  border-radius: 12px;
+}
+#contact {
+  border-radius: 4em;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #4f46e5;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+#contact a {
+  color: #4f46e5;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #fafafa;
+  border: 0;
+  text-decoration: none;
+  border-radius: 12px;
+}
+#contact p {
+  width: 80%;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 4em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fafafa;
+  text-align: center;
+  font-size: 0.75em;
+}
+footer #footer-grid {
+  display: flex;
+  gap: 5em;
+}
+
+#footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}

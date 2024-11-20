@@ -4,44 +4,360 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Antonio Grosu Developer - Projects</title>
+    <link rel="stylesheet" href="projects.css"
   </head>
   <body>
     <!-- navbar -->
     <nav>
-      <a href="/index.html">antoniogrosu.dev</a>
-      <a href="/about.html">About</a>
-      <a href="/projects.html">Projects</a>
-      <a href="#contact">Get in Touch</a>
+      <a href="/index.html" class="logo">antoniogrosu.dev</a>
+      <div class="nav-container">
+        <a href="/about.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="#contact">Get in Touch</a>
+      </div>
     </nav>
 
-    <h1>My projects while working at my company, Blooming Solutions</h1>
-    <!-- web projects -->
-    <section>
-      <h2>Web Development and Marketing</h2>
+    <section id="projects">
+      <h1>
+        My projects while working at my company,
+        <span id="Blooming Solutions">Blooming Solutions</span>
+      </h1>
+      <!-- web projects -->
+      <h3 id="web-marketing">Web Development and Marketing</h3>
       <!-- projects grid -->
       <div class="grid">
         <!-- project -->
-        <div>
-          <img src="" alt="Project Image" />
-          <h3>Project Title</h3>
-          <p>Description</p>
-          <a href="/">Github Repo</a>
-          <a href="/">Link Preview</a>
+        <div id="grid-project">
+          <img src="/images/wanda.png" alt="Project Image" />
+          <h4>Wanda Coffee and Joy</h4>
+          <p>
+            Static Website for a local Coffee Shop. Built with Next.js and
+            Tailwind CSS featuring a color pallette that blends with the cozy
+            vibe.
+          </p>
+          <a
+            target="_blank"
+            href="https://github.com/antonio-grosu/wanda-coffee"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Github Repo</a
+          >
+          <a target="_blank" href="https://wanda-coffee.ro"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
+              />
+            </svg>
+            Link Preview</a
+          >
+        </div>
+        <div id="grid-project">
+          <img src="/images/kvala.png" alt="Project Image" />
+          <h4>Kvala Restaurant</h4>
+          <p>
+            Static Webiste for a local Greek Restaurant. Built with Next.js and
+            Tailwind CSS featuring a custom gallery.
+          </p>
+          <a
+            target="_blank"
+            href="https://github.com/antonio-grosu/kvala-website"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Github Repo</a
+          >
+          <a target="_blank" href="https://kvala-website.vercel.app"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
+              />
+            </svg>
+            Link Preview</a
+          >
+        </div>
+
+        <div id="grid-project">
+          <img src="/images/Dordea.png" alt="Project Image" />
+          <h4>Elena Dordea</h4>
+          <p>
+            Website for a psychologist who is practicing art therapy. Built with
+            Next.js and Tailwind CSS featuring a blog.
+          </p>
+          <a
+            target="_blank"
+            href="https://github.com/antonio-grosu/psiholog-elena-d"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Github Repo</a
+          >
+          <a target="_blank" href="https://nuestisingur.ro"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
+              />
+            </svg>
+            Link Preview</a
+          >
+        </div>
+        <div id="grid-project">
+          <img src="/images/tsa.png" alt="Project Image" />
+          <h4>The Software Academy</h4>
+          <p>
+            Full Stack WebApp that is selling online courses. The app is helping
+            students master software development by providing a deeply-thought
+            learning path. Built with Next.js , Tailwind CSS and the REST API is
+            built using Express.js and Sequelize (Payments with Stripe Web
+            Hooks).
+          </p>
+          <a target="_blank" href="https://github.com/antonio-grosu/tsa-client"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Github Repo</a
+          >
+          <a target="_blank" href="https://the-software-academy.com"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
+              />
+            </svg>
+            Link Preview</a
+          >
+        </div>
+        <div id="grid-project">
+          <img src="/images/copatotal.png" alt="Project Image" />
+          <h4>Copa Total</h4>
+          <p>
+            Website for a company that hosts football tournaments in Italy. The
+            website features an admin panel where the admin adds data related to
+            the matches. The info is showed in the mobile app in forms of
+            leaderboard and stats. Built with Next.js and Tailwind CSS.
+          </p>
+          <!-- <a href="https://github.com/antonio-grosu/tsa-client"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Github Repo</a
+          >
+          <a href="https://the-software-academy.com"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
+              />
+            </svg>
+            Link Preview</a
+          > -->
+        </div>
+        <div id="grid-project">
+          <img src="/images/successfulmind.png" alt="Project Image" />
+          <h4>The Successful Mind</h4>
+          <p>
+            FullStack WebApp that is selling a mindfullness course. The website
+            contains a course page where the user can go through the course and
+            complete it. Built with Next.js, Tailwind CSS and the REST API is
+            built using Express.js and Mongo DB (Payments with Stripe Web
+            Hooks).
+          </p>
+          <a
+            target="_blank"
+            href="https://github.com/antonio-grosu/doro-frontend"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Github Repo</a
+          >
         </div>
       </div>
     </section>
     <!-- mobile projects -->
-    <section>
-      <h2>Mobile Development</h2>
+    <section id="projects">
+      <h3 id="mobile">Mobile Development</h3>
       <!-- projects grid -->
       <div class="grid">
         <!-- project -->
-        <div>
-          <img src="" alt="Project Image" />
-          <h3>Project Title</h3>
-          <p>Description</p>
-          <a href="/">Github Repo</a>
-          <a href="/">Link Preview</a>
+        <div id="grid-project">
+          <img src="/images/copatotal.png" alt="Project Image" />
+          <h4>Copa Total App</h4>
+          <p>
+            App for a company that hosts football tournaments in Italy. The
+            cross-platform app is showing the users all the on-going
+            tournaments, teams, players and their stats. The info is updated by
+            the admin from the official website, the communication being assured
+            by the API built with Express.js . The mobile app is built using
+            React Native and Expo.
+          </p>
+          <!-- <a href="https://github.com/antonio-grosu/tsa-client"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.006 2a9.847 9.847 0 0 0-6.484 2.44 10.32 10.32 0 0 0-3.393 6.17 10.48 10.48 0 0 0 1.317 6.955 10.045 10.045 0 0 0 5.4 4.418c.504.095.683-.223.683-.494 0-.245-.01-1.052-.014-1.908-2.78.62-3.366-1.21-3.366-1.21a2.711 2.711 0 0 0-1.11-1.5c-.907-.637.07-.621.07-.621.317.044.62.163.885.346.266.183.487.426.647.71.135.253.318.476.538.655a2.079 2.079 0 0 0 2.37.196c.045-.52.27-1.006.635-1.37-2.219-.259-4.554-1.138-4.554-5.07a4.022 4.022 0 0 1 1.031-2.75 3.77 3.77 0 0 1 .096-2.713s.839-.275 2.749 1.05a9.26 9.26 0 0 1 5.004 0c1.906-1.325 2.74-1.05 2.74-1.05.37.858.406 1.828.101 2.713a4.017 4.017 0 0 1 1.029 2.75c0 3.939-2.339 4.805-4.564 5.058a2.471 2.471 0 0 1 .679 1.897c0 1.372-.012 2.477-.012 2.814 0 .272.18.592.687.492a10.05 10.05 0 0 0 5.388-4.421 10.473 10.473 0 0 0 1.313-6.948 10.32 10.32 0 0 0-3.39-6.165A9.847 9.847 0 0 0 12.007 2Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            Github Repo</a
+          >
+          <a href="https://the-software-academy.com"
+            ><svg
+              class="w-6 h-6 text-gray-800 dark:text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13.213 9.787a3.391 3.391 0 0 0-4.795 0l-3.425 3.426a3.39 3.39 0 0 0 4.795 4.794l.321-.304m-.321-4.49a3.39 3.39 0 0 0 4.795 0l3.424-3.426a3.39 3.39 0 0 0-4.794-4.795l-1.028.961"
+              />
+            </svg>
+            Link Preview</a
+          > -->
         </div>
       </div>
     </section>
@@ -54,26 +370,32 @@
         with digital marketing, I’d love to connect. Feel free to reach out, and
         let’s explore how we can turn your vision into reality.
       </p>
-      <button>Send me Your Idea</button>
+      <a href="mailto:contact.codevs@gmail.com">Send me Your Idea</a>
     </section>
 
     <footer>
-      <a href="/index.html">antoniogrosu.dev</a>
+      <a class="logo" href="/index.html">antoniogrosu.dev</a>
       <!-- footer grid -->
       <div id="footer-grid">
         <!-- navigation div -->
-        <div>
+        <div id="footer-section">
           <h3>Navigation</h3>
           <a href="/index.html">Home</a>
           <a href="/about.html">About</a>
           <a href="/projects.html">Projects</a>
         </div>
         <!-- socials div -->
-        <div>
+        <div id="footer-section">
           <h3>Socials</h3>
-          <a href="/">Linkedin</a>
-          <a href="/">Github</a>
-          <a href="/">Leetcode</a>
+          <a
+            target="_blank"
+            href="/https://www.linkedin.com/in/antonio-grosu-a401ab310/"
+            >Linkedin</a
+          >
+          <a target="_blank" href="/https://github.com/antonio-grosu">Github</a>
+          <a target="_blank" href="/https://leetcode.com/u/antonio-grosu/"
+            >Leetcode</a
+          >
         </div>
       </div>
     </footer>

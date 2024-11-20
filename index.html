@@ -3,15 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Antonio Grosu Developer - Home</title>
   </head>
   <body>
     <!-- navbar -->
     <nav>
-      <a href="/index.html">antoniogrosu.dev</a>
-      <a href="/about.html">About</a>
-      <a href="/projects.html">Projects</a>
-      <a href="#contact">Get in Touch</a>
+      <a href="/index.html" class="logo">antoniogrosu.dev</a>
+      <div class="nav-container">
+        <a href="/about.html">About</a>
+        <a href="/projects.html">Projects</a>
+        <a href="#contact">Get in Touch</a>
+      </div>
     </nav>
 
     <!-- hero section -->
@@ -24,11 +27,11 @@
         functionality.
       </p>
       <!-- div butoane -->
-      <div>
-        <button>View My Projects</button>
-        <button>Get in Touch</button>
+      <div id="buttons">
+        <a href="/projects.html" id="button1">View My Projects</a>
+        <a href="#contact" id="button2">Get in Touch</a>
       </div>
-      <img src="" alt="Programmer Photo" />
+      <img src="/images/heroImg.png" alt="Programmer Photo" />
     </section>
 
     <!-- second section -->
@@ -37,54 +40,70 @@
         I am Experienced in Web Development, Marketing, and Mobile Development
       </h1>
       <!-- firm div -->
-      <div>
-        <h3>Blooming</h3>
-        <img src="" alt="Blooming Solutions Logo" />
-        <h3>Solution</h3>
+      <div id="banner">
+        <h3 id="first">Blooming</h3>
+        <img
+          src="/images/Blooming_Solutions_Logo.png"
+          alt="Blooming Solutions Logo"
+        />
+        <h3 id="second">Solutions</h3>
       </div>
       <!-- grid skills -->
       <div id="skills-grid">
         <!-- web dev div -->
-        <div id="webdev">
-          <img src="" alt="Web Icon" />
-          <h1>Web Development</h1>
-          <p>
-            Personal Websites, FullStack Applications, Management Solutions.
-          </p>
+        <div id="skill">
+          <img src="/images/web-icon.png" alt="Web Icon" />
+          <h3>Web Development</h3>
+          <p>Websites and full-stack web applications</p>
           <div>
-            <img src="" alt="Next.js Icon" />
-            <img src="" alt="Express.js Icon" />
-            <img src="" alt="MongoDB Icon" />
+            <img src="/images/nextjs.png" alt="Next.js Icon" />
+            <img src="/images/express.png" alt="Express.js Icon" />
+            <img src="/images/mongo.png" alt="MongoDB Icon" />
           </div>
-          <a href="/projects.html">Learn More</a>
+          <a href="/projects.html#web-marketing">Learn More</a>
         </div>
 
         <!-- mobile dev div -->
-        <div id="mobiledev">
-          <img src="" alt="Mobile Icon" />
-          <h1>Mobile Development</h1>
+        <div id="skill">
+          <img src="/images/mobile-icon.png" alt="Mobile Icon" />
+          <h3>Mobile Development</h3>
           <p>IOS and Android Development</p>
           <div>
-            <img src="" alt="Expo Icon" />
-            <img src="" alt="React Native Icon" />
-            <img src="" alt="IOS Icon" />
-            <img src="" alt="Android Icon" />
+            <img src="/images/expo.png" alt="Expo Icon" />
+            <img src="/images/react.png" alt="React Native Icon" />
+            <img src="/images/ios.png" alt="IOS Icon" />
+            <img src="/images/android.png" alt="Android Icon" />
           </div>
-          <a href="/projects.html">Learn More</a>
+          <a href="/projects.html#web-marketing">Learn More</a>
         </div>
         <!--  marketing div -->
 
-        <div id="digitalmarketing">
-          <img src="" alt="Marketing Icon" />
-          <h1>Digital Marketing</h1>
+        <div id="skill">
+          <img src="/images/marketing-icon.png" alt="Marketing Icon" />
+          <h3>Digital Marketing</h3>
           <p>Building successful campaigns on all platforms.</p>
           <div>
-            <img src="" alt="Facebook Icon" />
-            <img src="" alt="Instagram Icon" />
-            <img src="" alt="Tiktok Icon" />
+            <img src="/images/facebook.png" alt="Facebook Icon" />
+            <img src="/images/instagram.png" alt="Instagram Icon" />
+            <img src="/images/tiktok.png" alt="Tiktok Icon" />
           </div>
-          <a href="/projects.html">Learn More</a>
+          <a href="/projects.html#mobile">Learn More</a>
         </div>
+      </div>
+      <div id="text">
+        <p>
+          With extensive experience in crafting digital solutions, I am
+          passionate about building websites, mobile apps, and effective
+          marketing campaigns. At
+          <a href="https://blooming-solutions.ro">blooming-solutions.ro</a> ,
+          the company I founded, we provide customized services that merge
+          intuitive design with powerful functionality.
+        </p>
+        <p>
+          Over the years, I have worked on diverse projects, helping clients
+          expand their online presence and attract new opportunities through
+          cutting-edge technologies and innovative marketing strategies.
+        </p>
       </div>
     </section>
 
@@ -97,26 +116,32 @@
         with digital marketing, I’d love to connect. Feel free to reach out, and
         let’s explore how we can turn your vision into reality.
       </p>
-      <button>Send me Your Idea</button>
+      <a href="mailto:contact.codevs@gmail.com">Send me Your Idea</a>
     </section>
 
     <footer>
-      <a href="/index.html">antoniogrosu.dev</a>
+      <a class="logo" href="/index.html">antoniogrosu.dev</a>
       <!-- footer grid -->
       <div id="footer-grid">
         <!-- navigation div -->
-        <div>
+        <div id="footer-section">
           <h3>Navigation</h3>
           <a href="/index.html">Home</a>
           <a href="/about.html">About</a>
           <a href="/projects.html">Projects</a>
         </div>
         <!-- socials div -->
-        <div>
+        <div id="footer-section">
           <h3>Socials</h3>
-          <a href="/">Linkedin</a>
-          <a href="/">Github</a>
-          <a href="/">Leetcode</a>
+          <a
+            target="_blank"
+            href="/https://www.linkedin.com/in/antonio-grosu-a401ab310/"
+            >Linkedin</a
+          >
+          <a target="_blank" href="/https://github.com/antonio-grosu">Github</a>
+          <a target="_blank" href="/https://leetcode.com/u/antonio-grosu/"
+            >Leetcode</a
+          >
         </div>
       </div>
     </footer>
