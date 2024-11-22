@@ -33,11 +33,22 @@ nav a {
   text-decoration: none;
   color: #fafafa;
 }
+nav {
+  align-items: center;
+}
 .nav-container {
   display: flex;
   gap: 1em;
+  align-items: center;
 }
-
+#cta {
+  background-color: #4f46e5;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 8px;
+}
 .logo {
   font-weight: 500;
   font-size: 1em;
@@ -362,5 +373,9 @@ footer #footer-grid {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+  #contact p {
+    width: 100%;
+    text-align: start;
   }
 }

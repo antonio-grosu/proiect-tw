@@ -65,8 +65,11 @@ nav a {
 #about1 #right {
   width: 50%;
 }
-#about1 #right img {
+#desktop-img {
   width: 100%;
+}
+#mobile-img {
+  display: none;
 }
 
 #skills {
@@ -159,7 +162,12 @@ footer #footer-grid {
   flex-direction: column;
   gap: 4px;
 }
-
+#toggle {
+  display: none;
+}
+#dropdown-menu {
+  display: none;
+}
 @media (max-width: 768px) {
   .nav-container {
     display: none;
@@ -171,7 +179,13 @@ footer #footer-grid {
   #toggle {
     display: block;
   }
-
+  #desktop-img {
+    display: none;
+  }
+  #mobile-img {
+    width: 100%;
+    display: block;
+  }
   #toggle {
     background-color: transparent;
     color: white;
@@ -204,7 +218,35 @@ footer #footer-grid {
     z-index: 3;
     gap: 12px;
   }
-
+  #about1 {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #about1 #left {
+    width: 100%;
+  }
+  #right {
+    display: none;
+  }
+  #about1 h1 {
+    width: 100%;
+  }
+  #about1 p {
+    width: 100%;
+  }
+  #skills {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  #skills #skills-container {
+    flex-direction: column;
+    gap: 24px;
+  }
   nav {
     padding: 1em;
   }
@@ -225,5 +267,9 @@ footer #footer-grid {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+  }
+  #contact p {
+    width: 100%;
+    text-align: start;
   }
 }
