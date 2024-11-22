@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  padding: 0;
+  margin: 0; /* Also removes margin */
+  background-color: #030712;
+  color: #fafafa;
+}
+
 body {
   font-family: "Poppins";
   padding: 0;
@@ -31,12 +49,6 @@ nav a {
 }
 nav a {
   font-size: 0.75em;
-}
-
-@media (max-width: 768px) {
-  .nav-container {
-    display: none;
-  }
 }
 
 #about1 {
@@ -139,11 +151,79 @@ footer a {
 }
 footer #footer-grid {
   display: flex;
-  gap: 5em;
+  gap: 1em;
 }
 
 #footer-section {
   display: flex;
   flex-direction: column;
   gap: 4px;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    display: none;
+  }
+  nav {
+    position: relative;
+    z-index: 1;
+  }
+  #toggle {
+    display: block;
+  }
+
+  #toggle {
+    background-color: transparent;
+    color: white;
+    border: 0;
+  }
+  #dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+    border-bottom: 4px solid #4f46e5;
+    border-radius: 10px;
+    left: 0;
+    top: 100%; /* Align below the parent link */
+    background-color: #030712;
+    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    box-shadow: 5px 10px 5px #4f46e520;
+  }
+  #dropdown-menu a {
+    color: #fafafa;
+  }
+  #toggle:focus + #dropdown-menu,
+  #toggle:active + #dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    gap: 12px;
+  }
+
+  nav {
+    padding: 1em;
+  }
+  footer {
+    flex-direction: column;
+    padding: 1em;
+    justify-content: start;
+    align-items: start;
+  }
+  #footer-section {
+    align-items: start;
+    justify-content: start;
+  }
+  #footer-grid {
+    flex-direction: column;
+  }
+  #contact {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
