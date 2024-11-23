@@ -41,8 +41,8 @@ nav a {
 .nav-container {
   display: flex;
   gap: 1em;
+  align-items: center;
 }
-
 .logo {
   font-weight: 500;
   font-size: 1em;
@@ -50,7 +50,36 @@ nav a {
 nav a {
   font-size: 0.75em;
 }
-
+@keyframes slideUp {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(10%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 #about1 {
   display: flex;
   align-items: center;
@@ -61,9 +90,17 @@ nav a {
 }
 #about1 #left {
   width: 50%;
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  z-index: 0;
+  animation-timing-function: ease-in-out;
 }
 #about1 #right {
   width: 50%;
+  animation-name: slideRight;
+  animation-duration: 1s;
+  z-index: 0;
+  animation-timing-function: ease-in-out;
 }
 #desktop-img {
   width: 100%;
@@ -85,6 +122,10 @@ nav a {
   padding-left: 1em;
   padding-top: 0;
   width: 100%;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  z-index: 0;
+  animation-timing-function: ease-in-out;
 }
 #skills #skills-container #skill-section h3 {
   font-weight: 400;
@@ -162,11 +203,20 @@ footer #footer-grid {
   flex-direction: column;
   gap: 4px;
 }
-#toggle {
-  display: none;
-}
+
 #dropdown-menu {
   display: none;
+}
+#hamburger {
+  display: none;
+}
+#cta {
+  background-color: #4f46e5;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 8px;
 }
 @media (max-width: 768px) {
   .nav-container {
@@ -186,10 +236,16 @@ footer #footer-grid {
     width: 100%;
     display: block;
   }
-  #toggle {
-    background-color: transparent;
-    color: white;
-    border: 0;
+  #hamburger {
+    display: block;
+  }
+  #hamburger:checked + #dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    gap: 12px;
   }
   #dropdown-menu {
     display: none;
@@ -208,15 +264,6 @@ footer #footer-grid {
   }
   #dropdown-menu a {
     color: #fafafa;
-  }
-  #toggle:focus + #dropdown-menu,
-  #toggle:active + #dropdown-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 3;
-    gap: 12px;
   }
   #about1 {
     width: 100%;
