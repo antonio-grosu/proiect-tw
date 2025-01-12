@@ -1,0 +1,20 @@
+[
+  {
+    "review_id": 1,
+    "user": "user1@example.com",
+    "rating": 5,
+    "comment": "Outstanding service and quality!"
+  },
+  {
+    "review_id": 2,
+    "user": "user2@example.com",
+    "rating": 4,
+    "comment": "Good product, but there's room for improvement."
+  },
+  {
+    "review_id": 3,
+    "user": "user3@example.com",
+    "rating": 3,
+    "comment": "It's okay, not great but not terrible either."
+  }
+]
