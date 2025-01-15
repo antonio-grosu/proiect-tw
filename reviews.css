@@ -129,7 +129,7 @@ footer #footer-grid {
   justify-content: center;
   align-items: center;
 }
-.account-section .form-login {
+.form-login {
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -139,6 +139,7 @@ footer #footer-grid {
   box-shadow: 5px 10px 5px #4f46e520;
   width: 50%;
   margin-top: 2em;
+  animation: slideLeft 1s;
 }
 .set-btns {
   display: flex;
@@ -227,6 +228,22 @@ footer #footer-grid {
 .review p {
   font-size: 0.75em;
 }
+.success-message {
+  color: #030712;
+  text-align: center;
+  background-color: #4ade80;
+  padding: 0.75em;
+  border-radius: 5px;
+  font-weight: 500;
+}
+.error-message {
+  color: #030712;
+  text-align: center;
+  background-color: #ef4444;
+  padding: 0.75em;
+  border-radius: 5px;
+  font-weight: 500;
+}
 @media (max-width: 768px) {
   .nav-container {
     display: none;
@@ -280,5 +297,17 @@ footer #footer-grid {
   #footer-section {
     align-items: start;
     justify-content: start;
+  }
+  .account-section {
+    padding: 1em;
+  }
+  .form-login {
+    width: 100%;
+  }
+  .login-form {
+    width: 75%;
+  }
+  .review-section {
+    padding: 1em;
   }
 }

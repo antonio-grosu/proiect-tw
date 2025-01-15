@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=s, initial-scale=1.0" />
     <title>Antonio Grosu Developer - Reviews</title>
     <link rel="stylesheet" href="reviews.css" />
-    <script src="index.js"></script>
+    <script src="reviews.js"></script>
 
   </head>
   <body>
@@ -39,11 +39,13 @@
           In order to view or submit a review, you need to be logged into an
           account.
         </p>
-       
         <form class="login-form">
           <input type="email" placeholder="Email" />
           <input type="password" placeholder="Password" />
-        <button type="submit"">Login</button>
+          <p class="error-message">Invalid Email or Password</p>
+
+          <p class="success-message">You successfully Logged In</p>
+        <button type="submit"" id="login-form-btn">Login</button>
   
         </form>
        
@@ -52,7 +54,8 @@
 </section>
 <section class="review-section">
     <div class="review-wrapper">
-        <h1>My Reviews</h1>
+        <h1>Antonio Grosu - Reviews</h1>
+        <p>You can leave a review.</p>
       </div>
 </section>
     <footer>

@@ -1,16 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
   const loginBtn = document.getElementById("login-btn");
   const loginForm = document.querySelector(".login-form");
+  document.querySelector(".success-message").classList.add("hidden");
+  document.querySelector(".error-message").classList.add("hidden");
 
+  // localStorage.clear();
   function loginUser(email, password) {
-    fetch("http://127.0.0.1:5500/account.json")
+    fetch("/account.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Network response was not ok");
         }
-        return response.text().then((text) => {
-          return text ? JSON.parse(text) : {};
-        });
+        return response.json();
       })
       .then((data) => {
         const user = data.find((user) => {
@@ -22,9 +23,17 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         if (user) {
           localStorage.setItem("user", JSON.stringify(user));
-          alert("Login successful");
+          document.querySelector(".success-message").classList.remove("hidden");
+          document.getElementById("login-form-btn").classList.add("hidden");
+          setTimeout(() => {
+            window.location.reload();
+          }, 2000);
         } else {
-          alert("Invalid email or password");
+          document.querySelector(".error-message").classList.remove("hidden");
+          document.getElementById("login-form-btn").classList.add("hidden");
+          setTimeout(() => {
+            window.location.reload();
+          }, 2000);
         }
       })
       .catch((error) => console.error("Error:", error));
@@ -39,8 +48,12 @@ document.addEventListener("DOMContentLoaded", function () {
   if (localStorage.getItem("user")) {
     document.querySelector(".account-section").classList.add("hidden");
   }
+  if (!localStorage.getItem("user")) {
+    document.querySelector(".account-section").classList.remove("hidden");
+    document.querySelector(".review-section").classList.add("hidden");
+  }
 
-  fetch("http://127.0.0.1:5500/reviews.json")
+  fetch("/reviews.json")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
@@ -66,31 +79,3 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.error("Error:", error));
 });
-const reviewsArray = [];
-
-fetch("http://127.0.0.1:5500/reviews.json")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    return response.json();
-  })
-  .then((reviews) => {
-    reviewsArray.push(...reviews);
-    const reviewWrapper = document.querySelector(".review-wrapper");
-    const existingContent = reviewWrapper.innerHTML;
-    reviewWrapper.innerHTML =
-      existingContent +
-      reviewsArray
-        .map(
-          (review) => `
-                <div class="review">
-                    <h3>${review.user}</h3>
-                    <p>${review.comment}</p>
-                    <p><strong>Rating:</strong> ${review.rating}</p>
-                </div>
-            `
-        )
-        .join("");
-  })
-  .catch((error) => console.error("Error:", error));
