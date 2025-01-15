@@ -330,6 +330,126 @@ h4 {
   border-radius: 5px;
   font-weight: 500;
 }
+.review-section {
+  position: relative;
+}
+.review {
+  display: flex;
+  flex-direction: column;
+  gap: 0.05em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #4f46e550;
+  box-shadow: 5px 10px 5px #4f46e520;
+  width: 100%;
+  margin-top: 2em;
+  animation: slideLeft 1s;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews-div {
+  display: grid;
+  width: 100%;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+}
+#log-out-btn {
+  background-color: red;
+  margin-bottom: 1em;
+  display: block;
+  width: auto;
+  color: #fafafa;
+  font-weight: 700;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  border-radius: 8px;
+  font-size: 0.75em;
+  text-align: center;
+  border: none;
+}
+#add-review-btn {
+  background-color: #4f46e5;
+  color: #fafafa;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 8px;
+  font-size: 0.75em;
+  font-weight: 500;
+  text-align: center;
+  border: none;
+}
+.review-form {
+  background-color: #4f46e5;
+  border-radius: 10px;
+  transform: translateX(-50%);
+  top: 50%;
+  border: 0.1em solid #fafafa;
+  width: 40%;
+  padding: 3em;
+  position: absolute;
+  left: 50%;
+}
+.review-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.review-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.review-form h2 {
+  width: 100%;
+  text-align: center;
+}
+.review-form label {
+  width: 100%;
+  text-align: center;
+}
+.review-success-message {
+  color: #030712;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #4ade80;
+  padding: 0.75em;
+  border-radius: 5px;
+  font-weight: 500;
+}
+#review-form-btn {
+  width: 100%;
+  background-color: #030712;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fafafa;
+  font-weight: 700;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  border-radius: 8px;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+}
+
 @media (max-width: 768px) {
   .nav-container {
     display: none;
@@ -415,5 +535,12 @@ h4 {
   }
   .review-section {
     padding: 1em;
+  }
+  .reviews-div {
+    grid-template-columns: 1fr;
+  }
+  .review-form {
+    top: 20%;
+    width: 80%;
   }
 }

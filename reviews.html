@@ -51,7 +51,7 @@
         <h4>Do you have an account?</h4>
         <p>
           If not, create one here
-          <button class="btn-to-register">Create</button>
+          <button type="button" class="btn-to-register">Create</button>
         </p>
       </form>
 
@@ -86,12 +86,39 @@
         <button type="submit" id="register-form-btn">Register</button>
         <h4>Already have an account?</h4>
 
-        <p>If you do, login here <button class="btn-to-login">Login</button></p>
+        <p>
+          If you do, login here
+          <button type="button" class="btn-to-login">Login</button>
+        </p>
       </form>
     </section>
     <section class="review-section">
-      <h1>Antonio Grosu - Reviews</h1>
+      <h1 class="reviews-title">Antonio Grosu - Reviews</h1>
       <p class="logged-in-as"></p>
+      <button type="button" id="log-out-btn">Log out</button>
+      <button type="button" id="add-review-btn">Add Review</button>
+      <div class="reviews-div"></div>
+      <form class="review-form">
+        <h2>Submit a Review</h2>
+        <input required type="text" name="review-title" placeholder="Title" />
+        <textarea
+          required
+          name="review-review"
+          placeholder="Write your review here"
+        ></textarea>
+        <label>Rating 1-5</label>
+        <input
+          required
+          type="range"
+          name="review-rating"
+          min="1"
+          max="5"
+          value="3"
+        />
+        <p class="review-success-message">You successfully sent a review</p>
+
+        <button type="submit" id="review-form-btn">Submit</button>
+      </form>
     </section>
     <footer>
       <a class="logo" href="/index.html">antoniogrosu.dev</a>
