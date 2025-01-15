@@ -129,17 +129,10 @@ footer #footer-grid {
   justify-content: center;
   align-items: center;
 }
-.form-login {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  padding: 1em;
-  border-radius: 10px;
-  background-color: #4f46e5;
-  box-shadow: 5px 10px 5px #4f46e520;
-  width: 50%;
-  margin-top: 2em;
-  animation: slideLeft 1s;
+.login-form h1,
+p,
+h4 {
+  text-align: center;
 }
 .set-btns {
   display: flex;
@@ -174,6 +167,16 @@ footer #footer-grid {
   text-align: center;
 }
 .login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #4f46e5;
+  box-shadow: 5px 10px 5px #4f46e520;
+  width: 50%;
+  margin-top: 2em;
+  animation: slideLeft 1s;
   margin-top: 2em;
   display: flex;
   flex-direction: column;
@@ -186,9 +189,15 @@ footer #footer-grid {
   padding: 12px;
   border-radius: 8px;
   border: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
-.login-form button {
+#login-form-btn {
+  width: 50%;
   background-color: #030712;
+  margin-left: auto;
+  margin-right: auto;
   color: #fafafa;
   font-weight: 700;
   padding-left: 1em;
@@ -200,7 +209,85 @@ footer #footer-grid {
   text-align: center;
   border: none;
 }
+#register-form-btn {
+  width: 50%;
+  background-color: #030712;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fafafa;
+  font-weight: 700;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+  border-radius: 8px;
+  font-size: 1em;
+  text-align: center;
+  border: none;
+}
+.btn-to-register {
+  background-color: #030712;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fafafa;
+  font-weight: 700;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  border-radius: 8px;
+  font-size: 0.75em;
+  text-align: center;
+  border: none;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+  padding: 1em;
+  border-radius: 10px;
+  background-color: #4f46e5;
+  box-shadow: 5px 10px 5px #4f46e520;
+  width: 50%;
+  margin-top: 2em;
+  animation: slideLeft 1s;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.register-form h1,
+p,
+h4 {
+  text-align: center;
+}
+.register-form input {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.btn-to-login {
+  background-color: #030712;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fafafa;
+  font-weight: 700;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  padding-top: 0.45em;
+  padding-bottom: 0.45em;
+  border-radius: 8px;
+  font-size: 0.75em;
+  text-align: center;
+  border: none;
+}
 .hidden {
   display: none;
 }
@@ -210,26 +297,25 @@ footer #footer-grid {
   padding-bottom: 4em;
   padding-right: 6em;
 }
-.review {
+.review-section p {
+  text-align: left;
+}
+.login-success-message {
+  color: #030712;
+  text-align: center;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 0.5em;
-  border-radius: 10px;
-  margin-bottom: 2em;
-  background-color: #4f46e520;
-  box-shadow: 5px 10px 5px #4f46e520;
+  background-color: #4ade80;
+  padding: 0.75em;
+  border-radius: 5px;
+  font-weight: 500;
 }
-.review h3 {
-  font-size: 1em;
-}
-.review p {
-  font-size: 0.75em;
-}
-.success-message {
+.register-success-message {
   color: #030712;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   background-color: #4ade80;
   padding: 0.75em;
@@ -301,11 +387,31 @@ footer #footer-grid {
   .account-section {
     padding: 1em;
   }
-  .form-login {
+
+  .login-form {
     width: 100%;
   }
-  .login-form {
-    width: 75%;
+
+  .register-form {
+    width: 100%;
+  }
+  .login-form input {
+    width: 100%;
+  }
+  .register-form input {
+    width: 100%;
+  }
+  #login-form-btn {
+    width: 100%;
+  }
+  #register-form-btn {
+    width: 100%;
+  }
+  .login-success-message {
+    width: 100%;
+  }
+  .register-success-message {
+    width: 100%;
   }
   .review-section {
     padding: 1em;
